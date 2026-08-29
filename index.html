@@ -631,9 +631,64 @@
             }
         }
 
+        /* Poems Section */
+        .poems-section {
+            background: linear-gradient(180deg, var(--black) 0%, var(--deep) 100%);
+            padding: 120px 20px;
+            color: var(--cream);
+            text-align: center;
+        }
+
+        .poems-title {
+            font-size: 3em;
+            font-weight: 600;
+        }
+
+        .poems-list {
+            max-width: 760px;
+            margin: 60px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            text-align: left;
+        }
+
+        .poem-card {
+            background: linear-gradient(160deg, rgba(205,164,94,0.06), rgba(255,255,255,0.02));
+            border: 1px solid var(--gold-soft);
+            border-radius: 4px;
+            padding: 45px 50px;
+            position: relative;
+        }
+
+        .poem-number {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2em;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .poem-text {
+            font-size: 1.2em;
+            line-height: 1.9;
+            color: var(--text-soft);
+            white-space: pre-line;
+        }
+
+        @media (max-width: 600px) {
+            .poem-card {
+                padding: 30px 25px;
+            }
+            .poem-text {
+                font-size: 1.05em;
+                line-height: 1.8;
+            }
+        }
+
         /* Interactive Button */
         .special-button-section {
-            background: linear-gradient(180deg, var(--black) 0%, var(--black) 100%);
+            background: linear-gradient(180deg, var(--deep) 0%, var(--black) 100%);
             padding: 120px 20px;
             text-align: center;
             color: var(--cream);
@@ -1031,6 +1086,206 @@
             <div class="divider"></div>
             <p class="daily-subtitle">One new note unlocks every day — come back tomorrow for more.</p>
             <div class="daily-grid" id="dailyGrid"></div>
+        </section>
+
+        <!-- Poems Section -->
+        <section class="poems-section">
+            <span class="section-eyebrow">Written for you, from the heart</span>
+            <div class="divider"></div>
+            <div class="poems-list">
+                <div class="poem-card">
+                    <p class="poem-text">Səninlə o qədər istərəm ki,çıxım mən ay seyrinə
+Yadıma düşür gecələr,dönürəm nazəndə baxışlarının meylinə
+Gecə darıxır bu ürək yazır sənə,ama sənə canlı sarılmadımsa,xeyri nə?
+Hələ də ətrin gəlir burnuma,sanki həkk olunmuş beynimə.
+
+Olsaydı gecələr səninlə,gözlərdik açılmağını səhərin
+Şirin gələr hər dadı mənə,hətta səndən gələn zəhərin
+Olmasın sənə dərdi-bəla,gəlsin mənə qüssən,kədərin
+Əlbət bir gün açarıq xoş səhərləri sənlə,alarıq nəfəsini bir qərib şəhərin.
+
+Hər gün gələrəm özümə,ta ki,sənlə getmək üçün
+Çox şeydən keçərəm,hər saniyəmi səninlə qızıl etmək üçün,
+Bir bilsən nə əziyyətlər çəkdim bu qədər insan içindən səni seçmək üçün,
+Bu sözlər sənə yetməz,sənə olan sevgimi ifadə etmək üçün</p>
+                </div>
+                <div class="poem-card">
+                    <p class="poem-text">Yazıram taksidə sənə bu yazdığım sətrimi,
+Yanında olmasam belə ötürmüşən sənə ətrimi,
+Sanki yağış yağır,tanrı əlimdən alıb çətrimi
+Səninlə asan və mümkün olub,unutmuşam müşkülümü çətinimi,
+Səndə tapmışam xoşbəxtliyi,sağlam səhhətimi,
+Hələ dadı damağımda qalıb,hiss edirəm qönçə dodağlarının ləzzətini,
+Səndən tək xahişim,qoynunda bəxş elə mənə səmavi-cənnətini
+Çıxım xoş seyrinə,göylərdən seyr edim rəngarəng təbiətini.</p>
+                </div>
+                <div class="poem-card">
+                    <p class="poem-text">Sən elə bir gülsən ki,ləçəklərini saysam,bitməz
+Sən elə bir dəryasan ki,nə ləpələrin,nə sahillərin,bitməz
+Sən elə bir günəşsən ki,şəfəqlərinin sayı və istiliyi,bitməz
+Sən elə bir aysan ki,ətrafında ulduzların və işığın bitməz,
+Sən elə bir hissən ki,səni qoxladıqca və duyduqca bu hiss,bitməz
+Unutma,hər nə olursan olsun,bu qəlbin sənə olan sevgisi heç vaxt bitməz.</p>
+                </div>
+                <div class="poem-card">
+                    <p class="poem-text">Mən bir yarın zülfünə bəndəm,
+Sanki tanrı deyib ki,ey əziz bəndəm:
+Bu yar sənə əmanət,hüsnünü oxşa sən onun,
+Bu yar səndən ibarət,qaranlığına şam ol sən onun,
+Günəş ol səhərinə,ay parəsi axşam ol sən onun,
+O parəyə yalnızlıq yaraşmaz,işığına tam ol sən onun,
+Yet hər imdadına,yetər imdadına,tap özünü daxili dünyasında,
+Ol xoşbəxtlik açarı,ol sevgi müjdəsi həyatının növbəti yarısında,
+Aşın bütün sərhədləri,aşın bütün pillələri,
+Parladın hər zülməti,qoxlayın al gülləri,
+Toxuyun yeni çağlar,qoxluyun nəfəsinizi,
+Davam edin eyni yolda,darıxsaz da,yorulsaz da,itirməyin siz ümidi,həvəsinizi
+Hər çətinliyin,hər qorxunun altında çətir kimi bir dayanın,
+Tanrı sizi bir yaradıb onsuz ama,siz yeni dünyada yenidən yaranın,
+Addım atdığınız hər xiyaban çevrilsin abadlığa,
+Uçduğunuz hər səmada göyərçinlər qovuşsun azadlığa,
+Əl-ələ getdiyiniz hər yolda qalmasın məsamələr,
+Öpüşdüyünüz hər yer birlik rəmzi olsun,qalmasın məsafələr,
+Sevgi okeanınızda balıqlar belə quruya çıxsınlar,
+Hava hərarətdən od tutub yansın,ildırımlar,şimşəklər çaxsınlar,
+Sonra günəş çıxsın,isinin kölgəsində,
+Hiss etsin iki aşiq bu sevgini hər saniyəsində,hər nəfəsində.</p>
+                </div>
+                <div class="poem-card">
+                    <p class="poem-text">Açılan günəşisən səhərin,
+Uzanan yollarısan şəhərin,
+Mavi aynanısan Xəzərin,
+Varlığımsan,hərşeyimsən,dünyamsan.
+
+Gizlətmişəm qəlbimin əmin yerinə,
+Bağlanmışam musiqinin həzin yerinə,
+Dalmışam yuxunun dərin yerinə,
+Arzumsan,yuxumsan,xülyamsan.
+
+Sərxoşam gözlərinə,itib batmışam
+Məftunam sözlərinə,aşiq olub qalmışam
+Gözlərinin dərinliyində dənizi satın almışam,
+Qəlbimin aynasısan,hisslərimin gözüsən,
+Təkcə dünyam deyilsən,elə dünyanım özüsən.</p>
+                </div>
+                <div class="poem-card">
+                    <p class="poem-text">Tanrı möcüzə üçün seçmişdir mayı,
+Sən bir cənnətsən,gözlərin cənnət payı
+Saçların behişt bağı,tellərin qarabuğdayı
+Toxunmam incə varlığa,səndən savayı
+
+Gözlərində qəmzən və şivələrin dəli edir bir nəfəri,
+Şux yerişin,sərv qamət dəli edir bir nəfəri
+Rüxsarındakı lətafət dəli edir bir nəfəri,
+Qəlbindəki hərarət dəli edir bir nəfəri
+
+Məst olur bu aşiq incə telindən,
+Qəmzəli yerişin,incə belindən
+Qoxlaram,öpərəm buğdayı zülfündən,
+Feyzyab olaram bir ömür,ətrindən
+
+Sönməyən atəşsən,bitməyən dərya
+Hər keçən saniyəmiz,sanki bir röya
+Adın qədər müqədəssən,varlığın xülya
+Sənə (bizə 🤍🫂) arzum budur ki: "əbədi dünya"</p>
+                </div>
+                <div class="poem-card">
+                    <p class="poem-text">Keçir bir il macəramızdan,
+Amma əsla boşa getməyəcək zamanımızdan,
+Düşmədən "Ümid" atımızdan,
+Bir ilin sonudur,bir ilin əvvəli
+Bir yolun sonudur,bir yolun əvvəli
+Keçmişin bədəlidir,gələcəyin təməli
+Olduğ bu uzun yolda mübtəla,
+Qarşıda olsa da min bəla,
+Yolda qarlı aşırımlar görərək
+Sinə gərərək,davam edərək,
+Axtarmadan dərin səbəblər
+Yoxdur məxsusi diləklər,yoxdur məxsusi tələblər
+Sevgidir bu yolun işartı ulduzu,
+Buraxmadan belinizi,
+Buraxmadan qolunuzu,
+İtirmədən uzanan yolumuzu,
+İnaraq,ümid edərək
+Sevərək,güvəni itirməyərək.
+
+Sahildən dənizə tor atarığ
+Dünyanın ətrafında tur atarığ
+Dünya aşiqlərə sığmasa yenə yol taparığ
+Dünyada yer olmasa dünyam olarsan,
+Dünyama inşa etdiyim bünyam olarsan,
+Həmi röyamın parçası,həmi xülyam olarsan.</p>
+                </div>
+                <div class="poem-card">
+                    <p class="poem-text">Hər gecə yastığa baş qoyanda,
+Hər səhər yuxudan oyananda,
+Günəş sübh tezdən bərq vuranda
+Günəşin şəfqətidir bizi biz edən.
+
+İşığ zühur edir ala gözlərdə,
+Dil də sükut edir bəzən sözlərdə,
+Nə qədər etsən də yetmir sözlər də,
+Hisslərin zinətidir bizi biz edən.
+
+Qaçmalıyıq sevgidə fələkdən,
+Bir yerə varmalıyıq eyni diləkdən,
+İndi daha qəlbən,daha ürəkdən,
+Bəlkə də ayların həsrətidir bizi biz edən.
+
+Hər yeni sabah günəşə baxmağ üçün,
+Hər gecə ayın kölgəsində yatmağ üçün,
+Hər gün yeni xatirə buraxmağ üçün,
+Hər il yeni zirvəyə qalxmağ üçün
+Daima və daima bir yerdə olmağ üçün,
+Şeirlər və sözlər yetməz bəlkə də,
+Ömür və hisslər yetməz bəlkə də,
+Bizə yetən payı qoy yaşayağ biz,
+Hər zaman da bir yerdə olağ biz,
+Daima sevgiylə və eşqlə qalağ biz.</p>
+                </div>
+                <div class="poem-card">
+                    <p class="poem-text">Addım atırığ ilə yeni xəyallarda
+İşığ saçırığ səninlə dünyalarda
+Yuxuya qalırığ eyni xülyalarda
+Dənizə dalırığ eyni dəryalarda
+Xatırla ki,səni qəlbən sevirəm
+Elə möhkəm ki,səni mən sevirəm.
+
+Üç il öncə döyündü,
+bu ürək hərarətində,
+Bəzən ola bilər ki,
+qaldı könlün həsrətində
+Amma yenə də yaşadı
+o sonsuz cənnətində
+İlk gülüşün güzgüdür
+əks olunur gözlərimdə
+İlk baxışın nöqtədir
+əks olunur sözlərimdə
+Yazılır hər bir nişanın hər sətrimin önündə
+Olmuşam sənə mən sipər qəlbinin önündə.
+
+Hər yeni ildə aşmağ üçün ömür yolunu,
+Tək arzu görmək üçün xoşbəxt sonunu
+Gərək ki,hər zaman Gün baxsın Aya,
+Arzular çevrilsin fərdi dünyaya</p>
+                </div>
+                <div class="poem-card">
+                    <p class="poem-text">Sən gülümsəyəndə dünya mənə dar gəlir,
+Könlüm bir quş kimi qanad açıb var gəlir.
+Əllərin əlimdə olanda anladım —
+Bütün axtardığım yollar sənə çıxar,gəlir.
+Baxışın bir sözdür,deməsən də eşidirəm,
+O dildə danışır ki,ürək başa çıxar,gəlir.
+Sevgi bu imiş məgər — sadəcə yanında olmaq,
+Nə çox istəmək,nə də azı — tam olar,gəlir.
+Bahar açır sən güləndə,sən danışıb sən dinəndə
+Sanki səhra su axtarır,bir möcüzə ağ qar gəlir.
+Səni düşünəndə belə vaxt yavaşır bir anlığa,
+Sanki dünyanın özü nəfəsini saxlar,gəlir.
+Mən sözlərə sığmayan hissləri bilirdim həmişə —
+Sən gəldin,onların adı oldu,yazar,gəlir.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Special Button Section -->
